@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conecta y Aprende | OVA Ciber Rural</title>
+<style>
+:root{--navy:#16324f;--blue:#246b8e;--teal:#2a9d8f;--cream:#f5f7f2;--gold:#f4b942;--ink:#24313b;--muted:#5b6870;--white:#fff;--line:#dce5e7}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink);line-height:1.55}
+header{background:linear-gradient(120deg,var(--navy),var(--blue));color:white;padding:24px max(20px,calc((100% - 1080px)/2));}
+.brand{font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;opacity:.9}.hero{max-width:1080px;margin:auto;padding:22px 0 10px}.hero h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.08;margin:.25rem 0}.hero p{max-width:760px;font-size:1.08rem}
+header .tag{display:inline-block;border:1px solid #ffffff70;border-radius:999px;padding:6px 12px;margin:4px 6px 0 0;font-size:.88rem}
+nav{background:white;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5;box-shadow:0 2px 10px #16324f10}
+.navinner{max-width:1080px;margin:auto;padding:10px 16px;display:flex;gap:8px;flex-wrap:wrap}
+button,.btn{font:inherit;cursor:pointer;border:0;border-radius:10px;padding:10px 14px;background:var(--blue);color:white;font-weight:700}
+button:hover,.btn:hover{filter:brightness(.94)}button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+nav button{background:#edf3f5;color:var(--navy);padding:9px 12px}nav button.active{background:var(--navy);color:white}
+main{max-width:1080px;margin:24px auto;padding:0 16px 44px}.panel{background:white;border:1px solid var(--line);border-radius:18px;padding:clamp(18px,3vw,30px);box-shadow:0 6px 22px #16324f08;margin-bottom:20px}
+h2{color:var(--navy);margin-top:0;font-size:1.7rem}h3{color:var(--blue)}.eyebrow{color:var(--teal);font-size:.8rem;letter-spacing:.1em;font-weight:800;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}.module{border:1px solid var(--line);border-radius:14px;padding:18px;background:#fff;display:flex;flex-direction:column;align-items:flex-start}.module .num{background:#e2f3ef;color:#14685f;border-radius:10px;padding:7px 10px;font-weight:800}.module h3{margin:12px 0 6px}.module p{margin:0 0 14px;color:var(--muted);flex:1}.module button{margin-top:auto}
+.callout{background:#edf7f5;border-left:5px solid var(--teal);padding:14px 16px;border-radius:8px}.steps{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}.steps span{background:#eef2f5;padding:7px 10px;border-radius:8px;font-size:.9rem}.steps span.current{background:var(--gold);color:#342500;font-weight:800}
+label{display:block;font-weight:700;margin:14px 0 6px}input[type=text],textarea,select{width:100%;padding:11px;border:1px solid #aabac1;border-radius:9px;font:inherit;background:white}textarea{min-height:100px;resize:vertical}.option{display:flex;gap:10px;align-items:flex-start;padding:12px;border:1px solid var(--line);border-radius:10px;margin:8px 0;font-weight:400}.option input{margin-top:5px}.feedback{padding:12px;border-radius:10px;margin-top:12px}.good{background:#e4f6e9;color:#14532d}.bad{background:#fff1df;color:#7a3e00}.muted{color:var(--muted)}.progressbar{height:12px;background:#e5ecee;border-radius:99px;overflow:hidden}.progressbar div{height:100%;background:var(--teal);width:0%;transition:width .25s}.footer{color:var(--muted);font-size:.9rem;text-align:center;padding:20px}
+.hidden{display:none!important}.pill{display:inline-block;border-radius:999px;background:#e9f0f6;color:var(--navy);padding:4px 9px;font-size:.85rem;font-weight:700}
+@media(max-width:600px){.navinner{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}nav button{width:100%}.hero{padding-top:14px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">Objeto Virtual de Aprendizaje · Ciber Rural</div>
+  <section class="hero">
+    <span class="tag">Alfabetización digital</span><span class="tag">Pensamiento crítico</span><span class="tag">Aprendizaje colaborativo</span>
+    <h1>Conecta y Aprende</h1>
+    <p>Conectamos ideas, construimos conocimiento y aprendemos juntos. Un recorrido práctico para aprender a participar de forma crítica, segura y creativa en entornos digitales, incluso cuando la conectividad es limitada.</p>
+  </section>
+</header>
+<nav aria-label="Navegación principal"><div class="navinner">
+<button class="active" data-page="inicio">Inicio</button><button data-page="modulos">Módulos</button><button data-page="practica">Practica</button><button data-page="crea">Crea y comparte</button><button data-page="evalua">Evalúate</button>
+</div></nav>
+<main>
+<section id="inicio" class="page">
+  <div class="panel">
+    <div class="eyebrow">Bienvenida</div><h2>Tu aprendizaje comienza aquí</h2>
+    <p>Este OVA está dirigido principalmente a estudiantes de educación básica secundaria. Explora los módulos, realiza la actividad práctica y termina con una reflexión sobre cómo aplicar lo aprendido a una situación de tu comunidad.</p>
+    <div class="callout"><strong>¿Cómo funciona?</strong><div class="steps"><span class="current">1. INICIO</span><span>2. APRENDE</span><span>3. PRACTICA</span><span>4. CREA Y COMPARTE</span><span>5. EVALÚATE</span></div>Avanza a tu ritmo. Puedes volver a consultar los contenidos y usar las guías descargables cuando no tengas conexión.</div>
+    <p><button onclick="go('modulos')">Comenzar recorrido →</button></p>
+  </div>
+  <div class="grid">
+    <div class="panel"><span class="pill">Objetivo</span><h3>Aprender con sentido</h3><p>Fortalecer la alfabetización digital, el pensamiento crítico, la autonomía y el trabajo colaborativo.</p></div>
+    <div class="panel"><span class="pill">Accesibilidad</span><h3>Diseñado para diferentes contextos</h3><p>Textos claros, navegación sencilla y actividades que pueden realizarse sin enviar información a un servidor.</p></div>
+    <div class="panel"><span class="pill">Tu progreso</span><h3 id="progressLabel">0 de 6 módulos visitados</h3><div class="progressbar"><div id="progressFill"></div></div><p class="muted">El progreso se actualiza en este navegador durante la sesión.</p></div>
+  </div>
+</section>
+
+<section id="modulos" class="page hidden">
+  <div class="panel"><div class="eyebrow">Aprende</div><h2>Explora los seis módulos</h2><p>Selecciona cada módulo para leer una idea clave y una pequeña misión de aprendizaje.</p></div>
+  <div class="grid" id="moduleGrid"></div>
+  <div id="moduleDetail" class="panel hidden" aria-live="polite"></div>
+</section>
+
+<section id="practica" class="page hidden">
+  <div class="panel"><div class="eyebrow">Practica</div><h2>Detectives digitales</h2>
+  <p>Lee el caso y elige la mejor respuesta. La actividad permite comprobar la interacción y ofrece retroalimentación inmediata.</p>
+  <div class="callout"><strong>Caso:</strong> En un grupo de mensajería comparten una noticia alarmante, pero no aparece el autor ni la fuente original.</div>
+  <form id="quiz">
+    <label>¿Qué deberías hacer primero?</label>
+    <label class="option"><input type="radio" name="answer" value="a" required> Compartirla rápidamente para advertir a otras personas.</label>
+    <label class="option"><input type="radio" name="answer" value="b"> Verificar quién publica la información, buscar la fuente original y contrastarla con fuentes confiables.</label>
+    <label class="option"><input type="radio" name="answer" value="c"> Darla por cierta si muchas personas la han reenviado.</label>
+    <button type="submit">Comprobar respuesta</button>
+  </form><div id="quizFeedback" aria-live="polite"></div>
+  </div>
+</section>
+
+<section id="crea" class="page hidden">
+  <div class="panel"><div class="eyebrow">Crea y comparte</div><h2>Mi comunidad, mi solución</h2>
+  <p>Identifica una situación de tu comunidad y registra una propuesta. Esta actividad representa el componente de creación colaborativa del OVA.</p>
+  <form id="ideaForm">
+    <label for="problem">¿Qué situación te gustaría mejorar?</label><input id="problem" type="text" required placeholder="Ej.: poca información sobre el cuidado del agua">
+    <label for="cause">¿Qué causas identificas?</label><textarea id="cause" required placeholder="Describe brevemente las posibles causas..."></textarea>
+    <label for="solution">¿Qué solución propones usando los recursos disponibles?</label><textarea id="solution" required placeholder="Puede ser una guía, audio, infografía, campaña o actividad colaborativa..."></textarea>
+    <button type="submit">Generar ficha de propuesta</button>
+  </form>
+  <div id="ideaOutput" class="hidden"></div>
+  <p class="muted">Nota: esta demostración no publica datos en internet. La ficha puede imprimirse o guardarse como PDF desde el navegador.</p>
+  </div>
+</section>
+
+<section id="evalua" class="page hidden">
+  <div class="panel"><div class="eyebrow">Evalúate</div><h2>Cierre del recorrido</h2>
+  <p>Reflexiona sobre tu aprendizaje y verifica las evidencias completadas.</p>
+  <div id="checklist"></div>
+  <label for="reflection">¿Qué aprendiste y cómo lo aplicarías en tu comunidad?</label><textarea id="reflection" placeholder="Escribe tu reflexión..."></textarea>
+  <p><button onclick="window.print()">Imprimir / guardar evidencia en PDF</button> <button class="secondary" onclick="resetProgress()" style="background:#e9eef1;color:#16324f">Reiniciar recorrido</button></p>
+  <div class="callout"><strong>Criterios de evaluación:</strong> comprensión, pensamiento crítico, creatividad, uso de herramientas digitales, colaboración, resolución de problemas y responsabilidad digital.</div>
+  </div>
+</section>
+<div class="footer">Conecta y Aprende · Proyecto OVA Ciber Rural · Prototipo funcional para demostración académica</div>
+</main>
+<script>
+const modules = [
+{title:"Soy ciudadano digital",topic:"Respeto, privacidad y seguridad",text:"La ciudadanía digital implica convivir con respeto, proteger los datos personales y pensar antes de publicar o compartir información.",mission:"Misión: escribe dos acciones para proteger tu privacidad y una regla de respeto para los espacios digitales."},
+{title:"Aprendo a buscar información",topic:"Fuentes confiables y noticias falsas",text:"Una persona crítica revisa quién publica, cuándo se publicó, qué evidencias presenta y si otras fuentes confiables confirman la información.",mission:"Misión: compara dos fuentes sobre un mismo tema e identifica autor, fecha y evidencias."},
+{title:"Creo contenidos digitales",topic:"Textos, infografías, audio y video",text:"Crear contenidos digitales permite comunicar conocimientos de forma clara, creativa y responsable, respetando la autoría de otras personas.",mission:"Misión: elabora una infografía, un audio breve o un texto que explique algo útil para tu comunidad."},
+{title:"Aprendemos juntos",topic:"Comunicación y solución de problemas",text:"La colaboración consiste en escuchar, distribuir tareas, compartir ideas y construir una respuesta común a partir de diferentes aportes.",mission:"Misión: define una tarea para cada integrante y acuerden cómo revisarán el producto final."},
+{title:"Tecnología y comunidad",topic:"Necesidades del entorno",text:"La tecnología tiene sentido cuando ayuda a comprender una necesidad real y a proponer una solución pertinente al contexto.",mission:"Misión: identifica un problema local, sus causas y los recursos que ya existen para atenderlo."},
+{title:"Reto final",topic:"Una propuesta digital comunitaria",text:"Integra lo aprendido para diseñar una solución que pueda compartirse con la comunidad y mejorarse a partir de comentarios.",mission:"Misión: presenta el problema, la solución, el producto que crearás y cómo evaluarás su utilidad."}
+];
+const visited = new Set();
+function go(page){document.querySelectorAll('.page').forEach(p=>p.classList.add('hidden'));document.getElementById(page).classList.remove('hidden');document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===page));if(page==='evalua')renderChecklist();window.scrollTo({top:0,behavior:'smooth'});}
+document.querySelectorAll('nav button').forEach(b=>b.addEventListener('click',()=>go(b.dataset.page)));
+function updateProgress(){document.getElementById('progressLabel').textContent=`${visited.size} de 6 módulos visitados`;document.getElementById('progressFill').style.width=(visited.size/6*100)+'%';}
+const grid=document.getElementById('moduleGrid');
+modules.forEach((m,i)=>{const card=document.createElement('article');card.className='module';card.innerHTML=`<span class="num">Módulo ${i+1}</span><h3>${m.title}</h3><p>${m.topic}</p><button type="button">Explorar módulo</button>`;card.querySelector('button').addEventListener('click',()=>showModule(i));grid.appendChild(card);});
+function showModule(i){const m=modules[i],d=document.getElementById('moduleDetail');visited.add(i);updateProgress();d.classList.remove('hidden');d.innerHTML=`<div class="eyebrow">Módulo ${i+1} de 6</div><h2>${m.title}</h2><h3>${m.topic}</h3><p>${m.text}</p><div class="callout">${m.mission}</div><p><button onclick="go('modulos')">Volver a los módulos</button> <button onclick="go('practica')">Ir a practicar →</button></p>`;d.scrollIntoView({behavior:'smooth',block:'start'});}
+document.getElementById('quiz').addEventListener('submit',e=>{e.preventDefault();const val=new FormData(e.target).get('answer');const box=document.getElementById('quizFeedback');if(val==='b'){box.className='feedback good';box.innerHTML='<strong>¡Correcto!</strong> Antes de compartir, verifica la fuente, contrasta la información y revisa las evidencias. Has completado la práctica.';localStorage.setItem('quizDone','yes');}else{box.className='feedback bad';box.innerHTML='<strong>Inténtalo de nuevo.</strong> Compartir sin verificar puede difundir información falsa. Busca primero la fuente original y contrasta con fuentes confiables.';}});
+document.getElementById('ideaForm').addEventListener('submit',e=>{e.preventDefault();const problem=document.getElementById('problem').value.trim(),cause=document.getElementById('cause').value.trim(),solution=document.getElementById('solution').value.trim();const out=document.getElementById('ideaOutput');out.classList.remove('hidden');out.innerHTML=`<div class="panel"><span class="pill">Ficha de propuesta creada</span><h3>Mi comunidad, mi solución</h3><p><strong>Situación identificada:</strong> ${escapeHtml(problem)}</p><p><strong>Causas:</strong> ${escapeHtml(cause).replace(/\n/g,'<br>')}</p><p><strong>Solución propuesta:</strong> ${escapeHtml(solution).replace(/\n/g,'<br>')}</p><p class="muted">Siguiente paso: compartir la propuesta con compañeros, recibir comentarios y mejorarla.</p><button onclick="window.print()">Imprimir / guardar como PDF</button></div>`;localStorage.setItem('ideaDone','yes');out.scrollIntoView({behavior:'smooth'});});
+function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function renderChecklist(){const items=[['Explorar los seis módulos',visited.size===6],['Responder correctamente la práctica',localStorage.getItem('quizDone')==='yes'],['Crear una ficha de propuesta',localStorage.getItem('ideaDone')==='yes']];document.getElementById('checklist').innerHTML=items.map(([t,done])=>`<p>${done?'✅':'⬜'} ${t}</p>`).join('')+`<p><strong>Progreso de módulos:</strong> ${visited.size}/6</p>`;}
+function resetProgress(){visited.clear();localStorage.removeItem('quizDone');localStorage.removeItem('ideaDone');document.getElementById('quizFeedback').innerHTML='';document.getElementById('ideaOutput').classList.add('hidden');updateProgress();renderChecklist();go('inicio');}
+updateProgress();
+</script>
+</body>
+</html>
